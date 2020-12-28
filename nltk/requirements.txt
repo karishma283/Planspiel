@@ -1,0 +1,5 @@
+nltk
+pymongo
+numpy
+bs4
+requests

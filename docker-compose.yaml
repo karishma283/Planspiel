@@ -1,0 +1,31 @@
+# Taleh Muzaffarov
+version: '3'
+services:
+  server:
+    build: ./server
+    environment:
+      - NODE_ENV="production"
+    volumes:
+      - ./server:/server
+      #- /server/node_modules
+    ports:
+      - 5000:5000
+    container_name: server
+    depends_on:
+      - mongo
+  nltk_py:
+    build: ./nltk
+    container_name: nltk_py
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    volumes:
+      - mongodb:/data/db
+      - mongodb_config:/data/configdb
+    command: mongod 
+    ports:
+    - "27017:27017"
+volumes:
+  mongodb:
+  mongodb_config:
