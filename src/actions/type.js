@@ -1,0 +1,12 @@
+// Rajat Ghosh
+export const TEST = 'TEST'
+export const NEWS = 'NEWS'
+export const USER_CATEGORIES = 'USER_CATEGORIES'
+export const ALL_CATEGORIES = 'ALL_CATEGORIES'
+export const ARTICLE = 'ARTICLE'
+export const TOP_PODCASTS = 'TOP_PODCASTS'
+export const CHANNELS = 'CHANNELS'
+export const QUIZ_ARTICLES = 'QUIZ_ARTICLES'
+export const QUIZES = 'QUIZES'
+export const USER_SCORE = 'USER_SCORE'
+export const GAINED_SCORE = 'GAINED_SCORE'
